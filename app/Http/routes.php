@@ -19,3 +19,13 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+
+//tag
+Route::group(['prefix' => 'tag' ,'as' => 'tag::'], function () {
+    Route::get('index', ['as' => 'index','uses'=>'TagController@index']);
+    Route::get('delete/{id}', ['as' => 'delete','uses'=>'TagController@destroy']);
+    Route::get('edit/{id}', ['as' => 'edit','uses'=>'TagController@edit']);
+    Route::post('store', ['as' => 'store','uses'=>'TagController@store']);
+    Route::put('update/{id}', ['as' => 'update','uses'=>'TagController@update']);
+});
