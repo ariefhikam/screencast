@@ -25,6 +25,8 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    protected $with = ['profile'];
+
     /**
      * A user may have multiple roles.
      *
@@ -68,5 +70,9 @@ class User extends Authenticatable
     public function hasPermission(Permission $permission)
     {
         return $this->hasRole($permission->roles);
+    }
+
+    public function profile(){
+        return $this->hasOne('App\Profile','user_id');
     }
 }

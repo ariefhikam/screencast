@@ -12,8 +12,9 @@ class TagController extends Controller
     //
 	//protected $data;
 
-    function __construct(){
-    	//$this->data = Tag::paginate(15);
+    public function __construct(){
+        $this->middleware('auth');
+        $this->middleware('role:admin');
     }
 
     public function index(){
@@ -69,5 +70,14 @@ class TagController extends Controller
 	    $table->save();
 
 	    return redirect()->route('tag::edit',['id'=>$id])->withSuccess("Change Saved !!");
+    }
+
+    public function json(Request $request){
+        $tags = Tag::where('display_name','like','%'.$request['q'].'%')->paginate(5);
+        foreach ($tags as $tag) {
+                $result[] = ['id' => $tag->id,'name' => $tag->display_name ];
+        }
+
+        return response()->json($result);
     }
 }

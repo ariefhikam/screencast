@@ -28,7 +28,7 @@
                     	{{ csrf_field() }}
                         <fieldset>
                             <div class="form-group {{ $errors->has('name') ? ' has-error' : '' }}"">
-                                <input class="form-control" placeholder="Full Name" name="name" type="email" autofocus="" value="{{ old('name') }}">
+                                <input class="form-control" placeholder="Full Name" name="name" type="text" autofocus="" value="{{ old('name') }}">
                                 @if ($errors->has('name'))
                                     <span class="help-block text-danger">
                                         <strong>{{ $errors->first('name') }}</strong>
@@ -58,11 +58,6 @@
                                         <strong>{{ $errors->first('password_confirmation') }}</strong>
                                     </span>
                                 @endif
-                        </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input name="remember" type="checkbox" value="Remember Me">Remember Me
-                                </label>
                             </div>
                             <button class="btn btn-primary" type="submit"><i class="fa fa-btn fa-sign-in"></i> Sign Up</button>
                             <a class="btn btn-link" href="{{ url('/login') }}">Have an account?</a>

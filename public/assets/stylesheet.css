@@ -1,0 +1,285 @@
+/* 
+	Arief Hikam
+
+	color:
+		#119da4
+		#00c0f9
+		#3c3e42
+		#f5f5f1
+		#e0e0dd
+
+	fonts:
+		Source Sans Pro
+ */
+
+body{
+	font-family: 'Source Sans Pro',Helvetica,Arial,sans-serif;
+	background: #f5f5f1;
+}
+
+.b{
+	border: 1px solid black;
+}
+
+.box{
+	min-height: 650px;
+}
+
+.box1{
+	min-height: 300px;
+}
+
+.box2{
+	min-height: 150px;
+}
+
+.space15{
+	height: 15px;
+}
+.space30{
+	height: 30px;
+}
+.space100{
+	height: 100px;
+}
+.space200{
+	height: 200px;
+}
+.space300{
+	height: 300px;
+}
+
+.btn-cast{
+	background: #00c0f9;
+	color: #fff;
+	font-size: 16px;
+}
+
+.btn-cast:hover{
+	background: #119da4;
+	color: #fff;
+}
+
+.btn-mulai{
+	font-weight: 600;
+	font-size: 26px;
+}
+
+#head-page{
+	background: url('/assets/img/bg-header.jpg') no-repeat local left top / cover;
+}
+
+#head-page .wrapper{
+	background: rgba(0,0,0,0.5);
+	min-height: 670px;
+}
+
+#head-page .wrapper-explore{
+	background: rgba(0,0,0,0.5);
+	min-height: 170px;
+}
+
+#head-page #top-head .title-page{
+	color: #fff;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+#head-page #top-head .right-sign{
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+#head-page #top-head .right-sign .nav .dropdown a{
+	font-size: 14px;
+	color: #fff;
+}
+
+#head-page #top-head .right-sign .nav .dropdown a{
+	font-size: 16px;
+	color: #fff;
+}
+#head-page #top-head .right-sign .nav .dropdown a:hover,
+#head-page #top-head .right-sign .nav .dropdown:hover
+{
+	background: rgba(0,0,0,0);
+	color: #00c0f9;
+}
+#head-page #top-head .right-sign .nav .dropdown.open{
+	background: rgba(0,0,0,0);
+}
+#head-page #top-head .right-sign .nav .dropdown.open a{
+	background: rgba(0,0,0,0);
+}
+
+#head-page #top-head .right-sign .nav .dropdown .dropdown-menu{
+	background: rgba(0,0,0,0.4);
+	right:15px;
+}
+
+#head-page #top-head .right-sign .nav .dropdown .dropdown-menu .glyph{
+	width: 16px;
+	height: 16px;
+	stroke-width: 3px;
+}
+
+#head-page #top-head .right-sign .masuk{
+	color: #00c0f9;
+	margin-right: 10px;
+	font-size: 16px;
+}
+
+#head-page #mid-head .first-tag{
+	color: #119da4;
+	font-size: 72px;
+	font-weight: 700;
+}
+
+#head-page #mid-head .sec-tag{
+	color: #fff;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+
+#head-page #mid-head .glyph.chevron.right{
+	width: 20px;
+	height: 20px;
+	stroke-width: 3px;
+	margin-top: -3px;
+}
+
+#head-page #mid-head-explore .first-tag{
+	color: #119da4;
+	font-size: 42px;
+	font-weight: 700;
+	color: #00c0f9;
+	text-align: center;
+}
+
+#head-page #mid-head-explore .sec-tag{
+	color: #fff;
+	font-weight: 300;
+	color: #fff;
+	font-size: 22px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#head-page #mid-head-explore .glyph.chevron.right{
+	width: 20px;
+	height: 20px;
+	stroke-width: 3px;
+	margin-top: -3px;
+}
+
+#content-page .title-section{
+	color: #119da4;
+	font-size: 42px;
+}
+
+#content-page a{
+	color: #333;
+}
+
+#top3box-1{
+	height: 300px;
+}
+
+
+.top3box{
+	overflow: hidden;
+}
+
+.top3box2{
+	height: 148px;
+}
+
+.top3box img{
+	width: 100%;
+	vertical-align: middle;;
+}
+.top3box-wrapper{
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+
+.top3box .top3box-wrapper .wrapper{
+	background: rgba(0,0,0,0.4);
+	min-height: 300px;
+	padding: 15px 15px;
+}
+
+.top3box2 .top3box-wrapper .wrapper{
+	background: rgba(0,0,0,0.4);
+	min-height: 148px;
+	padding: 15px 15px;
+}
+
+
+.top3box-wrapper .wrapper .label-top3box{
+	color: #fff;
+	position: absolute;
+	bottom: 15px;
+	font-size: 20px;
+}
+
+
+.normalbox{
+	border: 1px solid #e0e0dd;
+	background: #fff;
+	border-radius: 5px;
+}
+
+.normalbox .normalbox-image{
+	overflow: hidden;
+	height: 250px;
+}
+.normalbox .normalbox-image img{
+	vertical-align: middle;
+	height: 100%;
+}
+
+.normalbox .normalbox-label{
+	padding: 0px 5px;
+}
+
+.normalbox .normalbox-label .normalbox-count{
+	color:#868686; 
+}
+
+.normalbox .normalbox-label .normalbox-count span{
+	font-size: 32px;
+	display: block;
+	margin-bottom: -10px;
+	font-weight: 400;
+	color:#333; 
+}
+#footer-page{
+	background: #3c3e42;
+	color: #fff;
+}
+
+
+/* 
+	explore page
+
+ */
+
+ #left-nav-explore{
+ 	
+ }
+
+
+
+ /* 
+	videp page
+  */
+
+  .content-video,
+  .detail-video,
+  .tag-video {
+  	background: #fff;
+  	padding: 5px 15px;
+  	border: 1px solid #e0e0dd;
+  }

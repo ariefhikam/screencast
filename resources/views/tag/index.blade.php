@@ -55,5 +55,5 @@
 @push('breadcumb')
     <li><a href="#"><svg class="glyph stroked home"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroked-home"></use></svg></a></li>
     <li class=""><a href="{{route('tag::index')}}">Tag</a></li>
-    <li class="active">Index</li>
+    <li class="active">All Tags</li>
 @endpush

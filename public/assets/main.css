@@ -9,3 +9,29 @@
 	margin: 0 10px 0 0;
 	stroke-width:3px;
  }
+
+ .addButton .glyph{
+ 	margin: 0 5px 0 0;
+ }
+
+ .addButton a{
+ 	color: #5f6468;
+ }
+
+
+ .addButton a:hover{
+ 	text-decoration: none;
+ 	color: #30a5ff;
+ }
+
+ small, .small{
+ 	font-size: 70%;
+ }
+
+ .text-small{
+ 	font-size: 12px;
+ }
+
+ .panel-title{
+ 	margin-top: 15px;
+ }
