@@ -50,7 +50,6 @@ class SeriesController extends Controller
 	        'picture' => 'required|mimes:jpeg,bmp,png,jpg',
 	    ]);
 
-
     	if($request->file('picture')!=''){
             $file = $request->file('picture');
             $fileName = str_random(10). $this->permalink($file->getClientOriginalName()).'.'.$file->getClientOriginalExtension();
