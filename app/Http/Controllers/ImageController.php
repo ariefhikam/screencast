@@ -13,7 +13,7 @@ class ImageController extends Controller
     //
 
     public function __construct(){
-        $this->middleware('auth',['only'=>['video']]);
+        // $this->middleware('auth',['only'=>[ ]]);
     }
 
     public function image($storage,$image,Request $request){

@@ -147,9 +147,14 @@ class LessonsController extends Controller
 
 
     public function view($slug,$id){
-        $table = Lessons::with('series','tag','user.profile')->findOrFail($id);
+        $table = Lessons::with(['series','tag','user.profile',
+            'roled'=>function($q){
+                if(Auth::check()){
+                    $q->where('id',Auth::user()->id);
+                }
+            }
+        ])->findOrFail($id);
         $category = \App\Category::all();
-
         $anotherLessons = Lessons::where('series_id',$table->series_id)->orderBy('created_at','ASC')->get();
 
         return view('lessons.view')->with(['table'=>$table,'anotherLessons'=>$anotherLessons,'category'=>$category]);

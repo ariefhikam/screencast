@@ -42,14 +42,16 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="">
-
 						<video id="video" class="video-js vjs-default-skin"
                       controls preload="none" width="100%" height="464"
                       data-setup='{"example_option":false}'>
-                      	@if(Auth::check())
+                      	@if((isset($table->price) && $table->price == '0.00')  || // free video
+                      		(Auth::check() && $table->users_id == Auth::user()->id) || // video uploader
+                      		(Auth::check() && isset($table->roled[0])) // enroled user
+                      		)
 	                    <source src="{{ route('video',['video'=>$table->url,'series'=>$table->series->permalink]) }}" type="video/mp4" />
-	                   	@else
-	                   	<video poster="myPoster.jpg" ...>
+	                   	{{-- @else --}}
+	                   	{{-- <video poster="myPoster.jpg"> --}}
 	                   	@endif
 	                     <!-- <source src="http://video-js.zencoder.com/oceans-clip.webm" type="video/webm" />
 	                     <source src="http://video-js.zencoder.com/oceans-clip.ogv" type="video/ogg" /> -->

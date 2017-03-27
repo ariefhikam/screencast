@@ -12,6 +12,7 @@
 	<li class="{{ Request::is('tag/*') ? 'active' : '' }}"><a href="{{route('tag::index')}}"><svg class="glyph stroked tag"><use xlink:href="#stroked-tag"/></svg> Tag</a></li>
 	<li class="{{ Request::is('user/*') ? 'active' : '' }}"><a href="{{route('user::index')}}"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Users</a></li>
 	@endif
+	<li><a href="{{ url('/logout') }}"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
 	<!-- <li><a href="panels.html"><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> Alerts &amp; Panels</a></li>
 	<li><a href="icons.html"><svg class="glyph stroked star"><use xlink:href="#stroked-star"></use></svg> Icons</a></li>
 	<li class="parent ">

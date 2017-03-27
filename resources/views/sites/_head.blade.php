@@ -17,6 +17,7 @@
             <li><a href="{{url('/home')}}"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Dasboard</a></li>
             <li><a href="{{route('lessons::index')}}"><svg class="glyph stroked camcorder"><use xlink:href="#stroked-camcorder"/></svg> Lessons</a></li>
             <li><a href="{{route('series::index')}}"><svg class="glyph stroked open folder"><use xlink:href="#stroked-video"/></svg> Series</a></li>
+            <li><a href="{{ url('/logout') }}"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
           </ul>
      	</li>
      </ul>
